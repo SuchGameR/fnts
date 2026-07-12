@@ -1,0 +1,82 @@
+{
+  "headNavigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "apps": "Apps",
+    "history": "History"
+  },
+  "catchcopy": {
+    "title": "What one likes, one will do well.",
+    "description": "Creating diverse works under the concept \"Begin the Unknown.\" I also share soccer-related content."
+  },
+  "hero": {
+    "label": "Brand",
+    "established": "2021-May",
+    "scroll": "Scroll Down"
+  },
+  "gizmo": {
+    "object": "Interactive",
+    "drag": "Drag to Rotate"
+  },
+  "about": {
+    "label": "About",
+    "bio": "I mainly create and post video works (YouTube videos).\nI continue creating as a hobby. I love soccer.",
+    "videos": {
+      "title": "Video Works",
+      "description": "Creating and sharing captivating video works."
+    },
+    "graphical": {
+      "title": "Graphical",
+      "description": "Pursuing stylishness and originality."
+    },
+    "design": {
+      "title": "Painting",
+      "description": "Drawing various art pieces while growing my skills."
+    },
+    "soccer": {
+      "title": "Soccer Related",
+      "description": "Posting content related to my favorite sport."
+    }
+  },
+  "footer": {
+    "catchcopy": "Begin the Unknown.",
+    "description": "Portfolio Site"
+  },
+  "works": {
+    "label": "Tools",
+    "ae": {
+      "description": "Motion effects and VFX works using After Effects. Used for YouTube video production and real-time visual direction."
+    },
+    "pr": {
+      "description": "Video editing and color grading with Premiere Pro. Production of video content published on YouTube."
+    }
+  },
+  "showcase": {
+    "label": "Works",
+    "card1": {
+      "title": "VFX Works",
+      "desc": "Visual effects and compositing works utilizing After Effects"
+    },
+    "card2": {
+      "title": "Video Editing",
+      "desc": "Video editing using Premiere Pro"
+    },
+    "card3": {
+      "title": "Motion Graphics",
+      "desc": "Animation direction for text and logos"
+    },
+    "card4": {
+      "title": "YouTube",
+      "desc": "Video content published on YouTube"
+    },
+    "card5": {
+      "title": "Design",
+      "desc": "Stylish visual design production"
+    },
+    "card6": {
+      "title": "3DCG",
+      "desc": "CG expression content created with Blender"
+    }
+  }
+}

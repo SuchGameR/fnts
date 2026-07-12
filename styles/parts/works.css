@@ -1,0 +1,194 @@
+/* ── Works ── */
+.works { width: 100%; padding: 0 0 80px; overflow: hidden; }
+.works-label { width: min(100%, 880px); margin: 0 auto 48px; padding: 0 28px; color: var(--text-muted); font: 500 .62rem monospace; letter-spacing: .12em; }
+
+.works-block {
+    width: 100%;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+.works-block:last-child { margin-bottom: 0; }
+
+/* SVG visual area */
+.works-visual {
+    flex: 0 0 50%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.works-visual img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Info */
+.works-info {
+    flex: 1;
+    min-width: 0;
+    padding: 60px 40px !important;
+    overflow: hidden;
+}
+.works-info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.works-info p {
+    font-size: .88rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* After Effects: info left, SVG right */
+.works-block--right {
+    flex-direction: row;
+}
+.works-block--right .works-visual {
+    order: 2;
+    justify-content: flex-end;
+    padding-right: 0;
+}
+.works-block--right .works-info {
+    order: 1;
+    padding-left: 40px;
+}
+
+/* Premiere Pro: SVG left, info right */
+.works-block--left {
+    flex-direction: row;
+}
+.works-block--left .works-visual {
+    order: 1;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+.works-block--left .works-info {
+    order: 2;
+    padding-right: 40px;
+}
+
+@media (max-width: 720px) {
+    .works-block {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .works-block--right,
+    .works-block--left {
+        flex-direction: column;
+    }
+    .works-block--right .works-visual,
+    .works-block--left .works-visual,
+    .works-block--right .works-info,
+    .works-block--left .works-info {
+        order: unset;
+    }
+    .works-visual {
+        flex: 0 0 auto;
+        height: 240px;
+        width: 100%;
+    }
+    .works-info {
+        flex: 0 0 auto;
+        padding: 20px 28px 0;
+    }
+    .works-info h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    .works-info p {
+        font-size: .85rem;
+    }
+}
+
+/* ── Showcase ── */
+.showcase { width: 100%; padding: 40px 0 100px; }
+.showcase-label { width: min(100%, 880px); margin: 0 auto 40px; padding: 0 28px; color: var(--text-muted); font: 500 .62rem monospace; letter-spacing: .12em; }
+.showcase-wrap {
+    width: min(100%, 880px);
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+/* ── Stage ── */
+.showcase-stage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 32px 0 0;
+}
+
+/* ── Card ── */
+.showcase-card {
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    border: 1px solid var(--glass-border);
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity .5s cubic-bezier(.22,1,.36,1),
+        transform .5s cubic-bezier(.22,1,.36,1);
+    position: relative;
+    will-change: transform, opacity;
+}
+.showcase-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-md);
+    background-image: radial-gradient(circle, var(--text-muted) .7px, transparent .7px);
+    background-size: 10px 10px;
+    opacity: .08;
+    pointer-events: none;
+}
+.showcase-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.showcase-card.is-active {
+    border-color: var(--accent);
+}
+.showcase-tag {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    background: var(--accent);
+    color: var(--bg);
+    font: 600 .56rem/1 monospace;
+    letter-spacing: .08em;
+}
+.showcase-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 16px 0 8px;
+}
+.showcase-card p {
+    font-size: .8rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+@media (max-width: 720px) {
+    .showcase-stage {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 24px 0 0;
+    }
+    .showcase-card { padding: 24px 20px; }
+    .showcase-card h4 { font-size: .95rem; }
+}

@@ -1,0 +1,57 @@
+footer {
+    width: 100vw;
+    margin-left: 0;
+    margin-top: auto;
+    padding: 70px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-lg);
+    border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 880px;
+}
+
+.footer-brand h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.footer-brand p {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: var(--sp-md);
+}
+
+.footer-social a {
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: inherit;
+    opacity: .55;
+}
+
+footer .copy {
+    color: var(--text-muted);
+    font-size: 0.7rem;
+}
+
+.footer-motion-mark { width: min(100%, 880px); height: clamp(52px, 7vw, 88px); position: relative; overflow: hidden; color: var(--text); }
+.footer-motion-mark p { position: absolute; inset: 0; display: flex; align-items: center; margin: 0; font-size: clamp(1.65rem, 4vw, 3.5rem); font-weight: 700; letter-spacing: -.065em; white-space: nowrap; clip-path: inset(0 100% 0 0); }.footer-motion-mark p span { transform: translateX(-18px); }
+.motion-slash { position: absolute; z-index: 2; left: 0; top: 50%; width: clamp(7px, 1vw, 12px); height: 165%; overflow: hidden; color: transparent; background: var(--text); transform: translateY(-50%) rotate(24deg); }
+.footer-motion-mark.is-visible .motion-slash { animation: slash-pass 1.05s cubic-bezier(.22, 1, .36, 1) forwards; }.footer-motion-mark.is-visible p { animation: catchcopy-reveal .8s .18s cubic-bezier(.22, 1, .36, 1) forwards; }.footer-motion-mark.is-visible p span { animation: catchcopy-slide .8s .18s cubic-bezier(.22, 1, .36, 1) forwards; }
+@keyframes slash-pass { from { left: 0; } to { left: calc(100% - 2.2em); } } @keyframes catchcopy-reveal { to { clip-path: inset(0 0 0 0); } } @keyframes catchcopy-slide { to { transform: translateX(0); } }
+@media (max-width: 500px) { .footer-motion-mark { height: 55px; }.motion-slash { width: 6px; height: 155%; } }

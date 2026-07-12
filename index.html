@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNTS</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d0d12">
+    <link rel="stylesheet" href="styles/common.css">
+</head>
+<body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="viewport-grid" aria-hidden="true"></div>
+
+    <header>
+        <div class="fnts-logo">
+            <svg viewBox="0 0 27 9" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.69769 5.04651C2.79306 5.0163 2.89463 5 3 5L2.69769 5.04651Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C2.89463 5 2.79306 5.0163 2.69769 5.04651C1.83042 5.5306 2.02119 5.92629 2.36545 6.64032C2.40849 6.72959 2.45393 6.82384 2.5 6.92386C3 8 2 8 2 8C2.77254 8.00771 1.81994 8.00351 1.29615 8.00119C1.14193 8.00051 1.02489 8 1 8C0.447715 8 0 7.55228 0 7V1C0 0.447715 0.447715 0 1 0H7.41968C7.77853 0 8.10988 0.192286 8.28792 0.503861L9.95437 3.42014C10.278 3.98645 11.1373 3.65031 11.0058 3.02512C11.004 3.0168 11.0021 3.00842 11 3L10.4387 1.31623C10.2229 0.668697 10.7049 0 11.3874 0H18C19 0.0205395 19.7 0.499998 20 1.5C20.2279 2.094 20.0233 2.98106 20 3.26896C20 4.21684 20.3001 4.73253 20.3001 4.73253C20.5 5.5 21.5 6.72528 22.9611 6.38381C24 6 23.5643 5.11336 22.9298 4.73253C22.5609 4.5111 22.2637 4.18635 21.8927 3.96619C20.7851 3.30893 20.3948 0.0205395 22.9834 0.0205395H26C26.5523 0.0205395 27 0.468256 27 1.02054L27 2.58494C27 3.39686 26.0824 3.86176 25.5276 3.26896C25.3058 3.03189 25.1084 2.78875 24.9201 2.52782C24.5063 1.95418 23.6039 2.01897 23.3526 2.68015C23.18 3.13413 23.4304 3.63756 24.195 3.75949C25.7262 4.22615 26.6475 4.57379 26.8842 5.41918C26.9029 5.48601 26.91 5.55623 26.908 5.62559C26.8577 7.32404 25.3727 8.02054 24.3927 8.02054L21.3927 8.03052C21.3807 8.03052 21.3428 8.0305 21.2891 8.03048C21.0645 8.03038 20.5625 8.03016 20.5107 8.03052C19.704 8.03613 19.037 8.0232 18.5707 7.17466C18.5404 7.11953 18.5184 7.06016 18.5 7C18.2823 6.58187 18.3504 5.76698 18.5 5C18.6757 4.09918 18.6321 3.27006 18.2 3C17.7913 2.74455 16.8825 3.13088 17.0169 3.93705L17.1743 6.8356C17.2759 7.44513 16.8058 8 16.1879 8H15C14.3356 8 13.8968 7.37643 14.067 6.73423L14.9715 3.74966C15.2099 2.85026 15 1.5 13.486 2.0099C13.1897 2.2185 13 2.51686 13 3V7C13 7.55228 12.5523 8 12 8H11.5803C11.2215 8 10.8901 7.80771 10.7121 7.49614L9.04563 4.57986C8.71772 4.00601 7.8397 4.3588 8 5L8.56126 6.68377C8.7771 7.3313 8.29513 8 7.61257 8H7C6.90749 8 6.80986 8.00494 6.71043 8.00998C6.21628 8.03501 5.67754 8.06229 5.5 7.49614C5.37592 7.10047 5.52087 6.4147 5.68782 5.62481C5.86365 4.79294 6.06388 3.84559 6 3C6 2.44772 5.55228 2 5 2H2.75C2.33579 2 2 2.33579 2 2.75C2 3.16421 2.33579 3.5 2.75 3.5H4.25C4.66421 3.5 5 3.83579 5 4.25C5 4.66421 4.66421 5 4.25 5H3Z"/>
+            </svg>
+        </div>
+        <nav>
+            <a href="index.html" class="i18n active" data-key="headNavigation.home"></a>
+            <a href="about.html" class="i18n" data-key="headNavigation.about"></a>
+            <a href="apps.html" class="i18n" data-key="headNavigation.apps"></a>
+            <a href="contact.html" class="i18n" data-key="headNavigation.contact"></a>
+        </nav>
+        <div class="theme-area">
+            <input type="checkbox" id="theme-toggle" checked>
+            <label for="theme-toggle">
+                <i class='bx bxs-sun'></i>
+            </label>
+        </div>
+        <button class="language-toggle" type="button" aria-label="Change language">EN</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg-human" aria-hidden="true"><img src="human.svg" alt=""></div>
+            <div class="hero-orbit" aria-hidden="true"><div class="orbit-ring orbit-ring-a"></div><div class="orbit-ring orbit-ring-b"></div></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="i18n" data-key="catchcopy.title"></h1>
+                    <p class="i18n" data-key="catchcopy.description"></p>
+                    <div class="hero-meta"><span>Tokyo, JP</span><span class="i18n" data-key="hero.established"></span></div>
+                </div>
+                <div class="gizmo-stage" aria-label="Interactive 3D axis gizmo">
+                    <div class="gizmo-dots" aria-hidden="true"></div>
+                    <div id="three-gizmo" class="three-gizmo"></div>
+                    <span class="stage-label stage-label-top i18n" data-key="gizmo.object"></span>
+                    <span class="stage-label stage-label-bottom i18n" data-key="gizmo.drag"></span>
+                </div>
+            </div>
+            <a class="scroll-cue" href="#about"><span></span><b class="i18n" data-key="hero.scroll"></b></a>
+        </section>
+
+        <section class="about">
+            <p class="about-label i18n" data-key="about.label"></p>
+            <div class="about-grid">
+                <p class="about-bio animate-in i18n" data-key="about.bio"></p>
+                <div class="about-card animate-in animate-in-d1">
+                    <div class="icon"><i class='bx bx-code'></i></div>
+                    <h3 class="i18n" data-key="about.videos.title"></h3>
+                    <p class="i18n" data-key="about.videos.description"></p>
+                </div>
+                <div class="about-card animate-in animate-in-d2">
+                    <div class="icon"><i class='bx bx-user'></i></div>
+                    <h3 class="i18n" data-key="about.graphical.title"></h3>
+                    <p class="i18n" data-key="about.graphical.description"></p>
+                </div>
+                <div class="about-card animate-in animate-in-d3">
+                    <div class="icon"><i class='bx bx-palette'></i></div>
+                    <h3 class="i18n" data-key="about.design.title"></h3>
+                    <p class="i18n" data-key="about.design.description"></p>
+                </div>
+                <div class="about-card animate-in animate-in-d4">
+                    <div class="icon"><i class='bx bx-user'></i></div>
+                    <h3 class="i18n" data-key="about.soccer.title"></h3>
+                    <p class="i18n" data-key="about.soccer.description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">
+            <p class="works-label i18n" data-key="works.label"></p>
+
+            <div class="works-block works-block--right animate-in">
+                <div class="works-info">
+                    <h3>After Effects</h3>
+                    <p class="i18n" data-key="works.ae.description"></p>
+                </div>
+                <div class="works-visual">
+                    <img src="effects.svg" alt="After Effects">
+                </div>
+            </div>
+
+            <div class="works-block works-block--left animate-in animate-in-d2">
+                <div class="works-visual">
+                    <img src="premiere.svg" alt="Premiere Pro">
+                </div>
+                <div class="works-info">
+                    <h3>Premiere Pro</h3>
+                    <p class="i18n" data-key="works.pr.description"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase">
+            <p class="showcase-label i18n" data-key="showcase.label"></p>
+            <div class="showcase-wrap">
+                <div class="showcase-stage">
+                    <div class="showcase-card" data-idx="0">
+                        <span class="showcase-tag">VFX</span>
+                        <h4 class="i18n" data-key="showcase.card1.title"></h4>
+                        <p class="i18n" data-key="showcase.card1.desc"></p>
+                    </div>
+                    <div class="showcase-card" data-idx="1">
+                        <span class="showcase-tag">Edit</span>
+                        <h4 class="i18n" data-key="showcase.card2.title"></h4>
+                        <p class="i18n" data-key="showcase.card2.desc"></p>
+                    </div>
+                    <div class="showcase-card" data-idx="2">
+                        <span class="showcase-tag">Motion</span>
+                        <h4 class="i18n" data-key="showcase.card3.title"></h4>
+                        <p class="i18n" data-key="showcase.card3.desc"></p>
+                    </div>
+                    <div class="showcase-card" data-idx="3">
+                        <span class="showcase-tag">YouTube</span>
+                        <h4 class="i18n" data-key="showcase.card4.title"></h4>
+                        <p class="i18n" data-key="showcase.card4.desc"></p>
+                    </div>
+                    <div class="showcase-card" data-idx="4">
+                        <span class="showcase-tag">Design</span>
+                        <h4 class="i18n" data-key="showcase.card5.title"></h4>
+                        <p class="i18n" data-key="showcase.card5.desc"></p>
+                    </div>
+                    <div class="showcase-card" data-idx="5">
+                        <span class="showcase-tag">3DCG</span>
+                        <h4 class="i18n" data-key="showcase.card6.title"></h4>
+                        <p class="i18n" data-key="showcase.card6.desc"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-motion-mark animate-on-scroll" aria-label="Start the Unknown">
+            <span class="motion-slash" aria-hidden="true">/</span>
+            <p><span class="i18n" data-key="footer.catchcopy"></span></p>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h3>FNTS</h3>
+                <p class="i18n" data-key="footer.description"></p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="#" aria-label="Discord"><i class='bx bxl-discord-alt'></i></a>
+            </div>
+        </div>
+        <p class="copy">&copy; 2026 FNTS</p>
+    </footer>
+
+    <script src="util/language.js"></script>
+    <script src="js/parts/theme-toggler.js"></script>
+    <script src="js/parts/scroll-animations.js"></script>
+    <script src="js/parts/showcase-scroll.js"></script>
+    <script type="module" src="js/parts/three-gizmo.js"></script>
+</body>
+</html>

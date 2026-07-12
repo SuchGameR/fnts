@@ -1,0 +1,82 @@
+{
+  "headNavigation": {
+    "home": "ホーム",
+    "about": "概要",
+    "contact": "お問い合わせ",
+    "apps": "アプリ",
+    "history": "履歴"
+  },
+  "catchcopy": {
+    "title": "好きこそものの上手なれ。",
+    "description": "『未知を、はじめよう。』をコンセプトに様々な作品を生み出してます。サッカー関連も発信しています。"
+  },
+  "hero": {
+    "label": "ブランド",
+    "established": "2021-May",
+    "scroll": "下へスクロール"
+  },
+  "gizmo": {
+    "object": "インタラクティブ",
+    "drag": "ドラッグして回転"
+  },
+  "about": {
+    "label": "概要",
+    "bio": "私は、主に映像作品(YouTube動画)などを投稿、制作をしています。\n趣味として、制作を続けています。サッカー好きです。",
+    "videos": {
+      "title": "映像作品",
+      "description": "魅力的な映像作品を制作、発信をしています。"
+    },
+    "graphical": {
+      "title": "グラフィカル",
+      "description": "スタイリッシュさ、そして奇抜さを追求しています。"
+    },
+    "design": {
+      "title": "ペインティング",
+      "description": "色々な絵を、成長しつつ描いています。"
+    },
+    "soccer": {
+      "title": "サッカー関連",
+      "description": "好きなものとして、関連を投稿しています。"
+    }
+  },
+  "footer": {
+    "catchcopy": "未知を、はじめよう。",
+    "description": "ポートフォリオサイト"
+  },
+  "works": {
+    "label": "ツール",
+    "ae": {
+      "description": "After Effectsを使ったモーションエフェクト・VFX作品。YouTube動画制作やリアルタイムな映像演出に使用。"
+    },
+    "pr": {
+      "description": "Premiere Proによる映像編集・カラーグレーディング。YouTubeで公開されている映像コンテンツの制作。"
+    }
+  },
+  "showcase": {
+    "label": "ワークス",
+    "card1": {
+      "title": "VFX作品",
+      "desc": "After Effectsを活用した視覚効果・コンポジット作品"
+    },
+    "card2": {
+      "title": "映像編集",
+      "desc": "Premiere Proによる映像編集"
+    },
+    "card3": {
+      "title": "モーション",
+      "desc": "テキスト・ロゴのアニメーション演出"
+    },
+    "card4": {
+      "title": "YouTube",
+      "desc": "YouTubeで公開している映像コンテンツ"
+    },
+    "card5": {
+      "title": "デザイン",
+      "desc": "スタイリッシュなビジュアルデザイン制作"
+    },
+    "card6": {
+      "title": "3DCG",
+      "desc": "BlenderによるCG表現コンテンツ"
+    }
+  }
+}
